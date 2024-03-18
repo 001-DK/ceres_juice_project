@@ -27,21 +27,21 @@ body {
 
 @keyframes colorAnimation {
   0% {
-    color: #27ae60; /* Start color */
+    color: #27ae60;
   }
   50% {
-    color: #f39c12; /* Middle color */
+    color: #f39c12;
   }
   100% {
-    color: #e74c3c; /* End color */
+    color: #e74c3c;
   }
 }
 
 h2 {
   text-align: center;
-  color: #27ae60; /* Initial color */
+  color: #27ae60;
   margin-bottom: 20px;
-  animation: colorAnimation 5s infinite alternate; /* Apply animation */
+  animation: colorAnimation 5s infinite alternate;
 }
 
 h3 {
