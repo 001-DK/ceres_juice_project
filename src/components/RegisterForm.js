@@ -24,11 +24,6 @@ function RegisterForm() {
           <input type="text" id="location" name="location" required />
         </div>
         <button type="submit">Register</button>
-        <div className="footer">
-          <p>
-            <a href="register.html">Back To Cashier Login</a>
-          </p>
-        </div>
       </form>
     </div>
   );

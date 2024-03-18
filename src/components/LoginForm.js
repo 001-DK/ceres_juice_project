@@ -40,12 +40,6 @@ function LoginForm() {
             <div className="inputBx">
               <button type="submit">Log In</button>
             </div>
-
-            <div className="inputBx">
-              <p>
-                <a href="register.html">Register New User</a>
-              </p>
-            </div>
           </form>
         </div>
       </div>
