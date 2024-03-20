@@ -1,14 +1,25 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Shop } from "./pages/shop/shop.jsx";
+import { Cart } from "./pages/cart/cart.jsx";
+import { ShopContextProvider } from "./context/shop-context";
+import Navbar from "./components/Navbar";
 // import LoginForm from "./components/LoginForm";
 // import RegisterForm from "./components/RegisterForm";
-import ProductsPage from "./components/ProductsPage";
 
 function App() {
   return (
     <div className="App">
-      {/* <RegisterForm /> */}
-      {/* <LoginForm /> */}
-      <ProductsPage />
+      <ShopContextProvider>
+        <Router>
+          <Navbar />
+          {/* <RegisterForm /> */}
+          {/* <LoginForm /> */}
+          <Routes>
+            <Route path="/" element={<Shop />} />
+          </Routes>
+        </Router>
+      </ShopContextProvider>
     </div>
   );
 }
